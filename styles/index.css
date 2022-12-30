@@ -1,0 +1,189 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper{
+    background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 25, 0.9251050762101716) 0%,
+    rgba(9, 121, 25, 0.5329482134650736) 100%
+  );
+    border-radius: 10px;
+    color: #fdfdfd;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+.wrapper header{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper .search{
+    margin: 2rem 0 1rem;
+    position: relative;
+}
+
+.search input{
+    height: 3rem;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    color: darkgreen;
+}
+
+.search input:focus{
+    background-color: rgba(255, 255, 255, 0.401);
+    border: 1px solid green;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.search input::placeholder{
+    color: darkgreen;
+    text-align: center;
+}
+
+.search :where(i, span){
+    position: absolute;
+    top: 50%;
+    color: #999;
+    transform: translateY(-50%);
+}
+
+.search i{
+    left: 16px;
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.search input:focus ~ i{
+    color: #fff
+}
+
+.search input:focus ~ span{
+    color: #fff
+}
+
+.search span{
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.search input:valid ~ span{
+    display: block;
+}
+
+.wrapper .info-text{
+    font-size: 1rem;
+    line-height: 150%;
+    text-align: justify;
+    color: #fdfdfd;
+}
+
+.wrapper .active .info-text{
+    display: none;
+}
+
+.info-text span{
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.wrapper.active ul{
+    display: block;
+}
+.wrapper ul{
+    display: none;
+}
+
+
+
+.wrapper ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: .8rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+}
+
+ul .word p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: .2rem;
+}
+
+ul .content{
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+ul .content::-webkit-scrollbar{
+    width: 0px;
+}
+
+ul .word span{
+    font-size: .9rem;
+    color: #fdfdfd9f;
+}
+
+ul .word i{
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+ul li:last-child{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+}
+
+.content li .details{
+    border-left: 3px solid #fdfdfd;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.content li .details p{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: .3rem;
+}
+
+.content li .details span{
+    font-size: .9rem;
+    font-weight: 500;
+    color: #fdfdfdd3
+}
+
+.synonyms .details .list{
+    display: flex;
+    flex-wrap: wrap;
+    
+    line-height: 150%;
+}
+
+.synonyms .details .list span{
+    cursor: pointer;
+    margin-right: 5px;
+    text-decoration: underline;
+}
+
+
+
+
+
