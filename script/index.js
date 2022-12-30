@@ -17,7 +17,7 @@ function data(result, wordOne) {
   if (result.title) {
     infoText.innerHTML = `Can't find the meaning of <span>"${word}"</span>. Please, try another search.`;
   } else {
-    console.log(result);
+    
     wrapper.classList.add("active");
     infoText.innerHTML = "";
     let definitions = result[0].meanings[0].definitions[0];
@@ -34,11 +34,11 @@ function data(result, wordOne) {
 
     if (result[0].meanings[0].synonyms.length === 0) {
       synonymsDetails.style.display = "none";
-      console.log("clique");
+      
     } else {
       synonymsDetails.style.display = "block";
       let synonymsContent = `${result[0].meanings[0].synonyms}`;
-      console.log(result[0].meanings[0].synonyms.join(" "));
+      
       constSynonyms.innerText = result[0].meanings[0].synonyms.join(", ");
     }
   }
