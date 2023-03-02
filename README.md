@@ -62,6 +62,7 @@ The following tools were used in this project:
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [FETCH API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
 ## :white_check_mark: Requirements
 
