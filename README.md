@@ -47,7 +47,7 @@
 ## :dart: About
 
 Here I could build an English Dictionary where I used all the data from an nice API (Free Dictionary API). These types of projects are great for practicing consuming data from an API.  
-Project inspired by the channel "Coding Artist" with some changes made by me.
+https://baxiclides-basso-neto.github.io/dictonaryApp/
 
 ## :sparkles: Features
 
